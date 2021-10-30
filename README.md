@@ -28,4 +28,10 @@ pip install pygame
 
 or it will automatically be installed by running main.py the first time
 
+If that doesnt work, then here is a tutorial on [how to install pip](https://www.geeksforgeeks.org/how-to-install-pip-on-windows/)
+
+You probably wont need this because pip comes preinstalled with python
+
 To run source code, double click and if the *run with what app* dialogue box opens up, select python
+
+No need for python or any of the other dependencies if you are running the executable(.exe) file
