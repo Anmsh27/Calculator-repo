@@ -14,7 +14,7 @@ Use backspace to remove last typed character
 
 History.txt file will automatically get created in the cwd
 
-** Other things
+## Other things
 
 To run, run executable
 
