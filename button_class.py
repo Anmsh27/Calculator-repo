@@ -1,5 +1,6 @@
 import pygame
 
+# Button class
 class Button:
     def __init__(self, x, y, width, height, color, border_radius, text):
         self.x = x
@@ -10,6 +11,7 @@ class Button:
         self.border_radius = border_radius
         self.text = text
 
+        # method to draw button
     def draw_button(self, surface, text_size=None, text_colour=None, text_x=None, text_y=None):
         button_final = pygame.Rect(self.x, self.y, self.width, self.height)
         pygame.draw.rect(surface=surface, color=self.color, rect=button_final, border_radius=self.border_radius)
@@ -17,6 +19,7 @@ class Button:
         rendered = font.render(self.text, True, text_colour if text_colour else (0, 0, 0))
         surface.blit(rendered, (text_x if text_x else (self.x + self.width / 2 - 20), text_y if text_y else (self.y + self.height / 2 - 32)))
 
+        # Method to identify click
     def clicked(self, mouse_x, mouse_y):
         return True if (
                 mouse_x > self.x and mouse_x < self.x + self.width and mouse_y > self.y and mouse_y < self.y + self.height) else False
